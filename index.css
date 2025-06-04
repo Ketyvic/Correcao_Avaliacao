@@ -1,115 +1,67 @@
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: linear-gradient(135deg, #781e78 0%, #36d4ad 35%, #e998d1 70%, #e2b24a 100%);
-    color: #f1f0f7;
-    margin: 0;
-    padding: 40px 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    min-height: 100vh;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #781e78 0%, #36d4ad 35%, #e998d1 70%, #e2b24a 100%);
+  color: #f1f0f7;
+  margin: 0;
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
 }
 
-
-/* Título opcional */
-h1 {
-    color: white;
-    margin-bottom: 30px;
-}
-
-/* Containers dos campos */
-p {
-    width: 100%;
-    max-width: 400px;
-}
-
-/* Labels com contraste claro */
 label {
-    display: block;
-    font-weight: 600;
-    margin-bottom: 8px;
-    color: #f5f0ff;
-    font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #f5f0ff;
+  font-size: 1rem;
+  width: 100%;
+  max-width: 400px;
+  display: block;
 }
 
-/* Campos de entrada com fundo lavanda */
 input {
-    width: 33%;
-    padding: 12px 15px;
-    margin-left: 22px;
-    font-size: 1rem;
-    border: none;
-    border-radius: 8px;
-    box-sizing: border-box;
-    outline: none;
-    background-color: #f4ecfa; /* lavanda claro */
-    color: #2e2d4e;
-    transition: box-shadow 0.3s ease, background-color 0.3s ease;
+  width: 100%;
+  max-width: 400px;
+  padding: 12px 15px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  box-sizing: border-box;
+  outline: none;
+  background-color: #f4ecfa;
+  color: #2e2d4e;
+  transition: box-shadow 0.3s ease, background-color 0.3s ease;
+  margin-bottom: 15px;
 }
 
-/* Remove setas do input tipo number */
-input[type="number"]::-webkit-inner-spin-button,
-input[type="number"]::-webkit-outer-spin-button {
-    -webkit-appearance: none;
-    margin: 0;
-}
-input[type="number"] {
-    appearance: textfield;
-}
-
-/* Foco no campo */
 input:focus {
-    background-color: #e7d3fa;
-    box-shadow: 0 0 8px 2px rgba(160, 108, 213, 0.6);
+  background-color: #e7d3fa;
+  box-shadow: 0 0 8px 2px rgba(160, 108, 213, 0.6);
 }
 
-/* Botão com gradiente roxo */
 button {
-    margin-top: 20px;
-    margin-left: 20px;
-    padding: 14px 30px;
-    font-size: 1.1rem;
-    color: white;
-    background: linear-gradient(90deg, #2a9d93, #e55dce);
-    border: none;
-    border-radius: 10px;
-    cursor: pointer;
-    box-shadow: 0 5px 15px rgba(155, 93, 229, 0.4);
-    transition: background 0.3s ease, box-shadow 0.3s ease;
-    width: 100%;
-    max-width: 400px;
+  width: 100%;
+  max-width: 400px;
+  padding: 14px 30px;
+  font-size: 1.1rem;
+  color: white;
+  background: linear-gradient(90deg, #2a9d93, #e55dce);
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 0 5px 15px rgba(155, 93, 229, 0.4);
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+  margin-bottom: 20px;
 }
 
 button:hover {
-    background: linear-gradient(90deg, #7b2cbf, #c77dff);
-    box-shadow: 0 8px 20px rgba(199, 125, 255, 0.6);
+  background: linear-gradient(90deg, #7b2cbf, #c77dff);
+  box-shadow: 0 8px 20px rgba(199, 125, 255, 0.6);
 }
-
-
-
-/* Cabeçalho da tabela */
-thead th {
-    background-color: #6a4e90;
-    color: white;
-    padding: 15px 10px;
-    font-weight: 700;
-    text-align: left;
-}
-
-/* Linhas pares */
-tbody tr:nth-child(even) {
-    background-color: #f1e8fb;
-}
-
-/* Hover em linhas */
-tbody tr:hover {
-    background-color: #e2cfff;
-    cursor: default;
-}
-
 
 #livro_info {
   background: rgba(255, 255, 255, 0.1);
@@ -118,13 +70,12 @@ tbody tr:hover {
   max-width: 400px;
   width: 100%;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
-  margin-top: 20px;
+  color: #eee;
 }
 
 #livro_info p {
   font-size: 1.1rem;
   margin: 10px 0;
-  color: #eee;
 }
 
 #livro_info p#titulo {
@@ -144,23 +95,15 @@ tbody tr:hover {
   color: #ddd;
 }
 
-#livro_info p#autores,
-#livro_info p#editora,
-#livro_info p#ano,
-#livro_info p#quantidade_de_paginas,
-#livro_info p#categorias {
-  color: #bbb;
-}
-
-
-
-/* Responsividade */
 @media (max-width: 480px) {
-    body {
-        padding: 20px 10px;
-    }
+  body {
+    padding: 20px 10px;
+  }
 
-    table, button, p {
-        max-width: 100%;
-    }
+  label,
+  input,
+  button,
+  #livro_info {
+    max-width: 100%;
+  }
 }
